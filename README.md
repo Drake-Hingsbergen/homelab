@@ -2,6 +2,15 @@
 
 A personal homelab built to develop real-world IT infrastructure skills.
 
+## About This Project
+
+Built this homelab to develop real-world IT infrastructure skills 
+in Linux administration, Windows Server, and network security. 
+The isolated environment allows hands-on experimentation — breaking 
+and rebuilding things freely to understand why failures occur and 
+how to resolve them. Goal is to bring practical experience directly 
+applicable to enterprise IT environments.
+
 ## Hardware
 - Acer Predator PH16-71 (Proxmox host)
   - 16GB RAM
@@ -21,7 +30,7 @@ A personal homelab built to develop real-world IT infrastructure skills.
 | Proxmox VE 8.x | Hypervisor | ✅ Running |
 | pfSense | Virtual Firewall/Router | ✅ Running |
 | Windows Server 2022 | Active Directory/DNS/DHCP | ✅ Running |
-| Ubuntu Server | Linux VM / Domain joined | 🔜 Pending |
+| Ubuntu Server | Linux VM / Domain joined | ✅ Running |
 | Grafana + Prometheus | Monitoring | 🔜 Pending |
 
 ## Progress Log
@@ -38,12 +47,11 @@ A personal homelab built to develop real-world IT infrastructure skills.
 - [x] Configured AD OU structure
 - [x] Created user accounts and security groups
 - [x] Configured baseline GPOs
-- [ ] Join Ubuntu to AD domain
+- [x] Deploy Ubuntu Server
+- [x] Joined Ubuntu to homelab.local domain
+- [x] Verified AD login on Linux server
+- [x] Moved computer account to _Computers OU
+- [ ] Install Ansible and write playbooks
 - [ ] Set up Grafana monitoring
-- [ ] Write Ansible playbooks
 - [ ] Configure Azure AD Connect (Hybrid Identity)
 - [ ] Set up Tailscale remote access
-- [ ] Deploy Ubuntu Server
-- [ ] Join Ubuntu to AD domain
-- [ ] Set up Grafana monitoring
-- [ ] Write Ansible playbooks`
