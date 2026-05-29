@@ -28,7 +28,10 @@ A personal homelab built to develop real-world IT infrastructure skills.
 - [x] Installed Proxmox VE bare metal
 - [x] Configured static IP (192.168.4.50)
 - [x] Configured remote management via web UI
-- [ ] Deploy pfSense VM
+- [x] Deployed pfSense VM
+- [x] Configured WAN (192.168.4.145) and LAN (10.10.10.1)
+- [x] Configured DHCP scope 10.10.10.100-200
+- [x] Created vmbr1 isolated LAN bridge in Proxmox
 - [ ] Deploy Windows Server 2022
 - [ ] Deploy Ubuntu Server
 - [ ] Join Ubuntu to AD domain
