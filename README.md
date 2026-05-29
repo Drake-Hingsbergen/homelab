@@ -19,8 +19,8 @@ A personal homelab built to develop real-world IT infrastructure skills.
 | Service | Purpose | Status |
 |---|---|---|
 | Proxmox VE 8.x | Hypervisor | ✅ Running |
-| pfSense | Virtual Firewall/Router | 🔜 Pending |
-| Windows Server 2022 | Active Directory/DNS/DHCP | 🔜 Pending |
+| pfSense | Virtual Firewall/Router | ✅ Running |
+| Windows Server 2022 | Active Directory/DNS/DHCP | ✅ Running |
 | Ubuntu Server | Linux VM / Domain joined | 🔜 Pending |
 | Grafana + Prometheus | Monitoring | 🔜 Pending |
 
@@ -32,7 +32,17 @@ A personal homelab built to develop real-world IT infrastructure skills.
 - [x] Configured WAN (192.168.4.145) and LAN (10.10.10.1)
 - [x] Configured DHCP scope 10.10.10.100-200
 - [x] Created vmbr1 isolated LAN bridge in Proxmox
-- [ ] Deploy Windows Server 2022
+- [x] Deploy Windows Server 2022
+- [x] Promoted DC01 to Domain Controller
+- [x] Created homelab.local domain
+- [x] Configured AD OU structure
+- [x] Created user accounts and security groups
+- [x] Configured baseline GPOs
+- [ ] Join Ubuntu to AD domain
+- [ ] Set up Grafana monitoring
+- [ ] Write Ansible playbooks
+- [ ] Configure Azure AD Connect (Hybrid Identity)
+- [ ] Set up Tailscale remote access
 - [ ] Deploy Ubuntu Server
 - [ ] Join Ubuntu to AD domain
 - [ ] Set up Grafana monitoring
