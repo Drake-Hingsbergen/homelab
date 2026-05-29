@@ -51,7 +51,7 @@ applicable to enterprise IT environments.
 - [x] Joined Ubuntu to homelab.local domain
 - [x] Verified AD login on Linux server
 - [x] Moved computer account to _Computers OU
-- [ ] Install Ansible and write playbooks
+- [x] Install Ansible and write playbooks
 - [ ] Set up Grafana monitoring
 - [ ] Configure Azure AD Connect (Hybrid Identity)
 - [ ] Set up Tailscale remote access
