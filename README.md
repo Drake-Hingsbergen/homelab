@@ -31,8 +31,8 @@ applicable to enterprise IT environments.
 | pfSense | Virtual Firewall/Router | ✅ Running |
 | Windows Server 2022 | Active Directory/DNS/DHCP | ✅ Running |
 | Ubuntu Server | Linux VM / Domain joined | ✅ Running |
-| Grafana + Prometheus | Monitoring | 🔜 Pending |
-
+| Prometheus + Node Exporter | Metrics Collection | ✅ Running |
+| Grafana | Monitoring Dashboards | ✅ Running |
 ## Progress Log
 - [x] Installed Proxmox VE bare metal
 - [x] Configured static IP (192.168.4.50)
@@ -52,6 +52,14 @@ applicable to enterprise IT environments.
 - [x] Verified AD login on Linux server
 - [x] Moved computer account to _Computers OU
 - [x] Install Ansible and write playbooks
-- [ ] Set up Grafana monitoring
-- [ ] Configure Azure AD Connect (Hybrid Identity)
-- [ ] Set up Tailscale remote access
+- [x] Installed Prometheus + Node Exporter on Ubuntu
+- [x] Configured Prometheus to scrape Node Exporter
+- [x] Installed Grafana and connected to Prometheus
+- [x] Imported Node Exporter Full dashboard (ID 1860)
+- [x] Verified real-time metrics for CPU, RAM, disk, network
+
+## Monitoring
+- **Prometheus** scrapes metrics every 15 seconds
+- **Node Exporter** exposes Ubuntu system metrics on :9100
+- **Grafana** visualizes metrics via Node Exporter Full dashboard
+- Dashboard tracks: CPU, RAM, disk, network, swap, uptime
