@@ -33,6 +33,8 @@ applicable to enterprise IT environments.
 | Ubuntu Server | Linux VM / Domain joined | ✅ Running |
 | Prometheus + Node Exporter | Metrics Collection | ✅ Running |
 | Grafana | Monitoring Dashboards | ✅ Running |
+| Tailscale | Remote Access / Subnet Router | ✅ Running |
+
 ## Progress Log
 - [x] Installed Proxmox VE bare metal
 - [x] Configured static IP (192.168.4.50)
@@ -57,6 +59,10 @@ applicable to enterprise IT environments.
 - [x] Installed Grafana and connected to Prometheus
 - [x] Imported Node Exporter Full dashboard (ID 1860)
 - [x] Verified real-time metrics for CPU, RAM, disk, network
+- [x] Installed Tailscale on Proxmox as subnet router
+- [x] Advertised 10.10.10.0/24 to Tailscale network
+- [x] Verified remote access from Samsung Z Fold on cell data
+- [x] Accessed Grafana dashboard remotely
 
 ## Monitoring
 - **Prometheus** scrapes metrics every 15 seconds
