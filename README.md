@@ -63,3 +63,5 @@ applicable to enterprise IT environments.
 - **Node Exporter** exposes Ubuntu system metrics on :9100
 - **Grafana** visualizes metrics via Node Exporter Full dashboard
 - Dashboard tracks: CPU, RAM, disk, network, swap, uptime
+
+![Grafana Dashboard](Screenshots/grafana-dashboard.png)
